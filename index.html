@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Humbal Meet | Web Developer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#2563eb', // Blue-600
+                        secondary: '#1e40af', // Blue-800
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-slate-50 text-slate-800 font-sans antialiased">
+
+    <header class="fixed w-full bg-white/90 backdrop-blur-sm shadow-sm z-50 transition-all">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex-shrink-0">
+                    <a href="#" class="text-xl font-bold text-primary tracking-tight">Meet.Dev</a>
+                </div>
+                <nav class="hidden md:flex space-x-8">
+                    <a href="#about" class="text-slate-600 hover:text-primary font-medium transition">Home</a>
+                    <a href="#skills" class="text-slate-600 hover:text-primary font-medium transition">Skills</a>
+                    <a href="#experience"
+                        class="text-slate-600 hover:text-primary font-medium transition">Experience</a>
+                    <a href="#projects" class="text-slate-600 hover:text-primary font-medium transition">Projects</a>
+                    <a href="#contact" class="text-slate-600 hover:text-primary font-medium transition">Contact</a>
+                </nav>
+                <div class="md:hidden flex items-center">
+                    <button class="text-slate-600 hover:text-primary focus:outline-none transition-colors"
+                        id="mobile-menu-btn">
+                        <i class="fas fa-bars text-2xl" id="menu-icon"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div id="mobile-menu"
+            class="hidden md:hidden bg-white border-t border-slate-100 absolute w-full left-0 shadow-lg transition-all duration-300 ease-in-out">
+            <div class="px-4 pt-2 pb-4 space-y-1">
+                <a href="#about"
+                    class="mobile-link block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:text-primary hover:bg-slate-50">Home</a>
+                <a href="#skills"
+                    class="mobile-link block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:text-primary hover:bg-slate-50">Skills</a>
+                <a href="#experience"
+                    class="mobile-link block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:text-primary hover:bg-slate-50">Experience</a>
+                <a href="#projects"
+                    class="mobile-link block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:text-primary hover:bg-slate-50">Projects</a>
+                <a href="#contact"
+                    class="mobile-link block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:text-primary hover:bg-slate-50">Contact</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="about"
+        class="pt-32 pb-20 md:pt-40 md:pb-28 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-12">
+        <div class="md:w-2/3 space-y-6 text-center md:text-left">
+            <h2 class="text-primary font-semibold tracking-wide uppercase">Hello, I am</h2>
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-slate-900 leading-tight">
+                Humbal Meet
+            </h1>
+            <h3 class="text-2xl md:text-3xl font-medium text-slate-600">Web Developer</h3>
+            <p class="text-lg text-slate-600 max-w-2xl mx-auto md:mx-0">
+                BCA student (Semester 6) with a strong interest in backend development and problem-solving. Equipped
+                with knowledge in React, Node.js, and MongoDB, I am actively seeking an internship or fresher
+                opportunity to build real-world applications.
+            </p>
+            <div class="flex flex-wrap justify-center md:justify-start gap-4 pt-4">
+                <a href="#contact"
+                    class="px-8 py-3 bg-primary text-white rounded-lg shadow hover:bg-secondary transition font-medium">Contact
+                    Me</a>
+                <a href="#projects"
+                    class="px-8 py-3 bg-white text-primary border border-primary rounded-lg shadow-sm hover:bg-slate-50 transition font-medium">View
+                    Work</a>
+
+                <a href="assets/Humbal-Meet-Resume.pdf" download
+                    class="px-8 py-3 bg-slate-900 text-white rounded-lg shadow hover:bg-slate-800 transition font-medium flex items-center gap-2">
+                    <i class="fas fa-download"></i> Download Resume
+                </a>
+            </div>
+
+            <div class="flex justify-center md:justify-start items-center gap-6 pt-6 text-slate-500">
+                <a href="mailto:humbalmeet0111@gmail.com" class="hover:text-primary transition text-xl"><i
+                        class="fas fa-envelope"></i></a>
+                <a href="https://github.com/Meetahir1" class="hover:text-primary transition text-xl" title="GitHub"><i
+                        class="fab fa-github"></i></a>
+
+                <a href="https://www.linkedin.com/in/your-profile-link/" target="_blank"
+                    class="hover:text-primary transition text-xl" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+
+                <span class="flex items-center gap-2 text-sm ml-2 border-l border-slate-300 pl-4"><i
+                        class="fas fa-map-marker-alt"></i> Rajkot, Gujarat</span>
+            </div>
+        </div>
+        <div class="md:w-1/3 flex justify-center">
+            <div
+                class="w-64 h-64 md:w-80 md:h-80 bg-slate-200 rounded-full border-8 border-white shadow-xl overflow-hidden flex items-center justify-center text-slate-400">
+                <img src="assets/meet.png" alt="meet photo" class="w-full h-full object-cover">
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center text-slate-900 mb-12">Technical Skills</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-slate-50 p-6 rounded-xl border border-slate-100 shadow-sm hover:shadow-md transition">
+                    <h3 class="text-xl font-semibold text-primary mb-4"><i class="fas fa-code mr-2"></i>Frontend</h3>
+                    <ul class="space-y-2 text-slate-600">
+                        <li>HTML / CSS / Tailwind</li>
+                        <li>JavaScript (ES6+, DOM)</li>
+                        <li>Responsive Design</li>
+                        <li>Flexbox & Grid Systems</li>
+                    </ul>
+                </div>
+                <div class="bg-slate-50 p-6 rounded-xl border border-slate-100 shadow-sm hover:shadow-md transition">
+                    <h3 class="text-xl font-semibold text-primary mb-4"><i class="fas fa-server mr-2"></i>Backend</h3>
+                    <ul class="space-y-2 text-slate-600">
+                        <li>Node.js</li>
+                        <li>REST APIs</li>
+                        <li>Routing & Middleware</li>
+                        <li>Async/Await</li>
+                    </ul>
+                </div>
+                <div class="bg-slate-50 p-6 rounded-xl border border-slate-100 shadow-sm hover:shadow-md transition">
+                    <h3 class="text-xl font-semibold text-primary mb-4"><i class="fas fa-database mr-2"></i>Data & Auth
+                    </h3>
+                    <ul class="space-y-2 text-slate-600">
+                        <li>MongoDB (CRUD, Mongoose)</li>
+                        <li>Firebase (Auth, Login)</li>
+                        <li>JSON Parsing</li>
+                        <li>Fetch API Integration</li>
+                    </ul>
+                </div>
+                <div class="bg-slate-50 p-6 rounded-xl border border-slate-100 shadow-sm hover:shadow-md transition">
+                    <h3 class="text-xl font-semibold text-primary mb-4"><i class="fas fa-tools mr-2"></i>Tools</h3>
+                    <ul class="space-y-2 text-slate-600">
+                        <li>Git & GitHub</li>
+                        <li>Postman (API Testing)</li>
+                        <li>VS Code</li>
+                        <li>Version Control</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="py-20 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+                <div>
+                    <h2 class="text-3xl font-bold text-slate-900 mb-8">Professional Experience</h2>
+                    <div class="relative border-l-2 border-primary/30 pl-8 pb-8">
+                        <div class="absolute w-4 h-4 bg-primary rounded-full -left-[9px] top-1 ring-4 ring-slate-50">
+                        </div>
+                        <span class="text-sm font-semibold text-primary">03/2024 - 04/2024</span>
+                        <h3 class="text-xl font-bold text-slate-900 mt-1">Web Development Intern</h3>
+                        <h4 class="text-lg text-slate-700 mb-3">Rao Information Technology Pvt. Ltd. | Rajkot</h4>
+                        <ul class="list-disc list-inside text-slate-600 space-y-2">
+                            <li>Completed an intensive internship focused on HTML5, CSS3, and Git workflows.</li>
+                            <li><strong>Achievement:</strong> Awarded "Champion of the Day" for securing 1st Rank in the
+                                internal "Template Marathon" (Layout Design Challenge).</li>
+                            <li>Demonstrated strong proficiency in responsive web design and version control.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div>
+                    <h2 class="text-3xl font-bold text-slate-900 mb-8">Education</h2>
+                    <div class="space-y-8">
+                        <div class="relative border-l-2 border-primary/30 pl-8">
+                            <div
+                                class="absolute w-4 h-4 bg-primary rounded-full -left-[9px] top-1 ring-4 ring-slate-50">
+                            </div>
+                            <span class="text-sm font-semibold text-primary">06/2023 - Present</span>
+                            <h3 class="text-xl font-bold text-slate-900 mt-1">Bachelor of Computer Applications (BCA)
+                            </h3>
+                            <p class="text-slate-700">T.N. Rao College (Saurashtra University) | Rajkot, Gujarat</p>
+                            <p class="text-slate-600 mt-2 font-medium">Current CGPA: 6.7</p>
+                        </div>
+                        <div class="relative border-l-2 border-primary/30 pl-8">
+                            <div
+                                class="absolute w-4 h-4 bg-slate-400 rounded-full -left-[9px] top-1 ring-4 ring-slate-50">
+                            </div>
+                            <span class="text-sm font-semibold text-slate-500">07/2021 - 05/2023</span>
+                            <h3 class="text-xl font-bold text-slate-900 mt-1">HSC (Commerce)</h3>
+                            <p class="text-slate-700">Amthiba Vidhyalay | Rajkot</p>
+                            <p class="text-slate-600 mt-2">Secured 60.93% (67.51 PR) in 12th.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center text-slate-900 mb-12">Featured Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div
+                    class="bg-white rounded-xl border border-slate-200 shadow-sm overflow-hidden hover:shadow-lg transition-shadow group flex flex-col">
+                    <div class="p-6 flex-grow">
+                        <div class="flex justify-between items-start mb-4">
+                            <h3 class="text-xl font-bold text-slate-900 group-hover:text-primary transition-colors">
+                                Trailer Streaming Platform</h3>
+                            <span class="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded font-medium">JS &
+                                API</span>
+                        </div>
+                        <p class="text-sm text-slate-500 mb-4">02/04/2025 - 17/04/2025</p>
+                        <p class="text-slate-600 mb-4 text-sm">Inspired by JioHotstar and Prime Video. Built using HTML,
+                            CSS, JavaScript, and TMDB API.</p>
+                        <ul class="list-disc list-inside text-sm text-slate-600 space-y-1">
+                            <li>Implemented Firebase authentication.</li>
+                            <li>Dynamic search results & video playback using Plyr.js.</li>
+                            <li>Fetch API, Async/Await, and DOM manipulation.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div
+                    class="bg-white rounded-xl border border-slate-200 shadow-sm overflow-hidden hover:shadow-lg transition-shadow group flex flex-col">
+                    <div class="p-6 flex-grow">
+                        <div class="flex justify-between items-start mb-4">
+                            <h3 class="text-xl font-bold text-slate-900 group-hover:text-primary transition-colors">
+                                Snake Game</h3>
+                            <span
+                                class="bg-green-100 text-green-800 text-xs px-2 py-1 rounded font-medium">Frontend</span>
+                        </div>
+                        <p class="text-sm text-slate-500 mb-4">02/11/2025 - 04/11/2025</p>
+                        <p class="text-slate-600 mb-4 text-sm">A classic Snake Game with interactive gameplay developed
+                            using HTML, CSS, and JavaScript.</p>
+                        <ul class="list-disc list-inside text-sm text-slate-600 space-y-1">
+                            <li>Keyboard event handling for movement.</li>
+                            <li>JS arrays for snake growth & collision detection.</li>
+                            <li>Responsive layout and real-time score updates.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div
+                    class="bg-white rounded-xl border border-slate-200 shadow-sm overflow-hidden hover:shadow-lg transition-shadow group flex flex-col">
+                    <div class="p-6 flex-grow">
+                        <div class="flex justify-between items-start mb-4">
+                            <h3 class="text-xl font-bold text-slate-900 group-hover:text-primary transition-colors">Web
+                                Music Player</h3>
+                            <span
+                                class="bg-purple-100 text-purple-800 text-xs px-2 py-1 rounded font-medium">Frontend</span>
+                        </div>
+                        <p class="text-sm text-slate-500 mb-4">01/12/2024 - 03/12/2024</p>
+                        <p class="text-slate-600 mb-4 text-sm">A fully functional music streaming UI with real-time
+                            audio control.</p>
+                        <ul class="list-disc list-inside text-sm text-slate-600 space-y-1">
+                            <li>Managed playlist logic and track navigation.</li>
+                            <li>Clean UI, responsive design.</li>
+                            <li>Key-based volume interaction implementation.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact" class="bg-slate-900 text-white pt-16 pb-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-4">Get In Touch</h2>
+                <p class="text-slate-400 max-w-xl mx-auto">Currently seeking an internship or fresher opportunity to
+                    apply my backend and problem-solving skills to real-world applications.</p>
+            </div>
+
+            <div class="flex flex-col md:flex-row justify-center items-center gap-8 md:gap-16 mb-12">
+                <div class="flex items-center gap-3">
+                    <div class="w-12 h-12 bg-slate-800 rounded-full flex items-center justify-center text-primary">
+                        <i class="fas fa-phone-alt"></i>
+                    </div>
+                    <div>
+                        <p class="text-slate-400 text-sm">Phone</p>
+                        <a href="tel:+916354264544" class="font-medium hover:text-primary transition">+91 6354264544</a>
+                    </div>
+                </div>
+
+                <div class="flex items-center gap-3">
+                    <div class="w-12 h-12 bg-slate-800 rounded-full flex items-center justify-center text-primary">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div>
+                        <p class="text-slate-400 text-sm">Email</p>
+                        <a href="mailto:humbalmeet0111@gmail.com"
+                            class="font-medium hover:text-primary transition">humbalmeet0111@gmail.com</a>
+                    </div>
+                </div>
+
+                <div class="flex items-center gap-3">
+                    <div class="w-12 h-12 bg-slate-800 rounded-full flex items-center justify-center text-primary">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div>
+                        <p class="text-slate-400 text-sm">Location</p>
+                        <p class="font-medium">Rajkot, Gujarat</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-slate-800 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-slate-500 text-sm">© 2026 Humbal Meet. All rights reserved.</p>
+                <div class="flex space-x-4 mt-4 md:mt-0">
+                    <span class="text-slate-500 text-sm">Languages: English | Hindi | Gujarati</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const btn = document.getElementById('mobile-menu-btn');
+            const menu = document.getElementById('mobile-menu');
+            const menuIcon = document.getElementById('menu-icon');
+            const mobileLinks = document.querySelectorAll('.mobile-link');
+
+            // Toggle menu visibility
+            btn.addEventListener('click', () => {
+                menu.classList.toggle('hidden');
+
+                // Toggle icon between hamburger and X
+                if (menu.classList.contains('hidden')) {
+                    menuIcon.classList.remove('fa-times');
+                    menuIcon.classList.add('fa-bars');
+                } else {
+                    menuIcon.classList.remove('fa-bars');
+                    menuIcon.classList.add('fa-times');
+                }
+            });
+
+            // Close menu when a link is clicked
+            mobileLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    menu.classList.add('hidden');
+                    menuIcon.classList.remove('fa-times');
+                    menuIcon.classList.add('fa-bars');
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
